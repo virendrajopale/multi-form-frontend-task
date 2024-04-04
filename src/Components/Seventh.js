@@ -1,8 +1,8 @@
 import React from 'react'
 import lock from '../images/lock.png'
 
-const Seventh = ({ setStepperOn }) => {
-  setStepperOn(false)
+const Seventh = ({setactiveStep}) => {
+  setactiveStep(5)
 
   return (
     <div className='flex flex-col justify-center items-center min-h-screen gap-12 px-4 sm:px-6 lg:px-8'>

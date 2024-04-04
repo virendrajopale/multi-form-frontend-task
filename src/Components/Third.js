@@ -7,9 +7,9 @@ const Third = ({ setactiveStep }) => {
 
     return (
         <div className='flex flex-col pt-24 items-center  gap-12 '>
-            <div className='flex flex-col md:flex-row justify-center items-center md:gap-24'>
-                <video autoPlay muted className='h-[20rem] md:w-[40rem]' src={pulley}></video>
-                <div className='flex flex-col justify-center items-start gap-6  p-4'>
+            <div className='flex flex-col md:flex-row justify-center items-center md:gap-20'>
+                <video autoPlay muted loop className='h-[20rem] md:w-[40rem]' src={pulley}></video>
+                <div className='flex flex-col justify-center items-start gap-6 md:pl-16 p-4'>
                     <h6 className='text-3xl text-center'>
                         You’re in the right place
                     </h6>

@@ -21,7 +21,7 @@ const Stepper = ({ activeStep, totSteps }) => {
 
     return (
         <div className='flex items-center justify-center mt-10 p-6'>
-         {activeStep===0?null: <img src={arrow} onClick={prev} className='cursor-pointer'></img>}
+         {activeStep===0?null: <img src={arrow} onClick={prev}  className='cursor-pointer pr-4'></img>}
             {Array.from({ length: totSteps }).map((_, index) => (
                 <React.Fragment key={index}>
                     {isFinalStep(index) ? null : (

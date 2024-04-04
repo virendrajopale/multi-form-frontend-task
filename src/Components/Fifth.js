@@ -10,7 +10,7 @@ const Fifth = ({ setactiveStep }) => {
         <div className='flex flex-col items-center '>
             <div className='flex flex-col md:flex-row justify-center items-center gap-12 md:ml-28'>
                 <video autoPlay muted loop className='h-[16rem] md:w-[24rem] lg:w-[32rem]' src={cheerleaderblor}></video>
-                <div className='flex flex-col justify-center items-start gap-6 p-4 md:p-0 md:pl-8 lg:p-36 '>
+                <div className='flex flex-col justify-center items-start gap-6 p-4 md:p-0 md:pl-8 lg:pb-10 lg:pt-10  lg:pl-36 lg:pr-36 '>
                     <h6 className='text-3xl'>
                         You're on your way!
                     </h6>
@@ -31,3 +31,4 @@ const Fifth = ({ setactiveStep }) => {
 }
 
 export default Fifth
+
