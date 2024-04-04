@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import eq1 from '../images/eq1.png'
 import eq2 from '../images/eq2.png'
 import eq3 from '../images/eq3.png'
@@ -6,7 +6,10 @@ import eq4 from '../images/eq4.png'
 import { Link } from 'react-router-dom'
 
 const Fourth = ({ setactiveStep }) => {
-    setactiveStep(3)
+    useEffect(()=>{
+
+        setactiveStep(3)
+    },[])
 
     const mathtypes = [
         {
@@ -42,8 +45,8 @@ const Fourth = ({ setactiveStep }) => {
     }
 
     return (
-        <>
-            <div className='flex flex-col justify-evenly items-center pt-6 h-[85vh] gap-6 '>
+        
+            <div className='flex flex-col justify-evenly items-center pt-6  gap-6 '>
                 <div className='flex flex-col justify-between items-center gap-6'>
                     <h1 className='text-3xl text-center'>What is your math comfort level?</h1>
                     <h3 className='font-light text-[1rem] text-center'>Choose the highest level you feel confident in — you can always adjust later.</h3>
@@ -63,7 +66,7 @@ const Fourth = ({ setactiveStep }) => {
                     Continue
                 </Link>
             </div>
-        </>
+        
     )
 }
 

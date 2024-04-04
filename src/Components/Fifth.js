@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import cheerleaderblor from '../images/cheerleaderblor.mp4'
 import ReactStars from 'react-stars'
 
 const Fifth = ({ setactiveStep }) => {
-    setactiveStep(4)
+    useEffect(()=>{
+
+        setactiveStep(4)
+    },[])
 
     return (
         <div className='flex flex-col items-center '>

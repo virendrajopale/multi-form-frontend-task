@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import student from '../images/student.png'
 import lifelong from '../images/life.png'
 import other from '../images/other.png'
@@ -8,7 +8,10 @@ import teacher from '../images/teacher.png'
 import { Link, useNavigate } from 'react-router-dom'
 
 const First = ({ setactiveStep }) => {
-    setactiveStep(0)
+    useEffect(()=>{
+
+        setactiveStep(0)
+    },[])
 
     const usertypes = [
         {

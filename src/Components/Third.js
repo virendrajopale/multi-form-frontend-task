@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import pulley from '../images/pulleyblob.mp4'
 import { Link } from 'react-router-dom'
 
 const Third = ({ setactiveStep }) => {
+  useEffect(()=>{
+
     setactiveStep(2)
+  },[])
 
     return (
         <div className='flex flex-col pt-24 items-center  gap-12 '>

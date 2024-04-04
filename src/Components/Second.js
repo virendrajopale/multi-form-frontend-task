@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Stepper from './Stepper'
 import book from '../images/book.png'
 import math from '../images/math.png'
@@ -9,7 +9,10 @@ import someelse from '../images/someelse.png'
 import { Link, useNavigate } from 'react-router-dom'
 
 const Second = ({ setactiveStep }) => {
-    setactiveStep(1)
+    useEffect(()=>{
+
+        setactiveStep(1)
+    },[])
 
     const learntypes = [
         {
